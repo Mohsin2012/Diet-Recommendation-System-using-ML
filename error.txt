@@ -1,0 +1,41 @@
+Microsoft Windows [Version 10.0.22000.675]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\Diet Rec\project>venv\Scripts\activate
+
+(venv) E:\Diet Rec\project>flask run
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+Usage: flask run [OPTIONS]
+Try 'flask run --help' for help.
+
+Error: Could not locate a Flask application. You did not provide the "FLASK_APP" environment variable, and a "wsgi.py" or "app.py" module was not found in the current directory.
+
+(venv) E:\Diet Rec\project>set FLASK_APP=__init__.py
+
+(venv) E:\Diet Rec\project>flask run
+ * Serving Flask app '__init__.py' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+E:\Diet Rec\project\venv\lib\site-packages\flask_sqlalchemy\__init__.py:872: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+127.0.0.1 - - [31/May/2022 00:17:04] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2022 00:17:04] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/May/2022 00:17:04] "GET /static/assets/img/food.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [31/May/2022 00:17:09] "GET /login HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2022 00:17:09] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/May/2022 00:17:25] "POST /login HTTP/1.1" 302 -
+127.0.0.1 - - [31/May/2022 00:17:25] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2022 00:17:25] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/May/2022 00:17:38] "POST /result HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2022 00:17:38] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/May/2022 00:17:42] "POST /workout HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2022 00:17:42] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/May/2022 00:17:45] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [31/May/2022 00:17:45] "GET /static/styles/styles.css HTTP/1.1" 304 -
+127.0.0.1 - - [31/May/2022 00:17:45] "GET /static/assets/img/food.jpg HTTP/1.1" 304 -
